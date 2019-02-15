@@ -1,0 +1,16 @@
+create schema testecrmall;
+use testecrmall;
+create table Pessoa (
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    nome char(40) NOT NULL, 
+    dtNascimento char(40) NULL,
+    sexo char(9) NOT NULL,
+    cep varchar(8),
+    endereco varchar(80),
+    numeroEndereco varchar(5),
+    complemento varchar(80),
+    bairro varchar(50),
+    cidade varchar(50),
+    primary key(id)
+);
+insert into Pessoa (nome, dtNascimento, sexo, cep, endereco, numeroEndereco, complemento, bairro, cidade) values ("Fabiana", "17/03/1993", "Feminino", "01153020", "Rua Exemplo", "120", "apto 100", "Bairro bonito", "Maringá");
